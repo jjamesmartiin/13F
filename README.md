@@ -22,11 +22,11 @@ I included a few 13Fs as an example.
    ```
    pip install -r requirements.txt
    ```
-   - of if you are using nix then run:
+   - or if you are using nix then run:
    ```
    nix-shell
    ```
-       - add this ONLY if 'nixpkgs' was not found:
+   - use this ONLY if 'nixpkgs' was not found:
        ```
        # NIX_BUILD_SHELL=/bin/bash nix-shell
        ```
