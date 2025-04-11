@@ -33,22 +33,7 @@ in pkgs.mkShell rec {
     # dropping into the shell
     pythonPackages.venvShellHook
 
-    # Those are dependencies that we would like to use from nixpkgs, which will
-    # add them to PYTHONPATH and thus make them accessible from within the venv.
-    pythonPackages.numpy
-    pythonPackages.requests
-
-
-    # In this particular example, in order to compile any binary extensions they may
-    # require, the Python modules listed in the hypothetical requirements.txt need
-    # the following packages to be installed locally:
-    taglib
-    openssl
-    git
-    libxml2
-    libxslt
-    libzip
-    zlib
+    # IF WE ARE GETTING ERRORS ABOUT NOT FINDING THE LIBRARY, WE CAN ADD THE LIBRARY HERE
 
     stdenv.cc.cc.lib # needed this to import yfinance; it was giving me issues about not finding cstdlib++
     # ImportError: libstdc++.so.6: cannot open shared object file: No such file or directory
