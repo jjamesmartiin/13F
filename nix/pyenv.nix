@@ -10,6 +10,7 @@ let
   startPythonScript = ''
     # put the commands to start python script here
     # python main.py
+    # python 13f.py $F
   '';
 
   cleanupVenvScript = '' 
