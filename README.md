@@ -28,7 +28,7 @@ I included a few 13Fs as an example.
    ```
    - use this ONLY if 'nixpkgs' was not found:
        ```
-       # NIX_BUILD_SHELL=/bin/bash nix-shell
+       NIX_BUILD_SHELL=/bin/bash nix-shell
        ```
 
 5. Run the program:
